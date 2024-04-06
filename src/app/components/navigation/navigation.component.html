@@ -4,9 +4,8 @@
     <button class="dropbtn">Категории
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
-      <a href="#">Консоли</a>
-      <a href="#">Телефоны</a>
+    <div class="dropdown-content" *ngFor="let category of categories">
+      <a href="#">{{ category.categoryName }}</a>
     </div>
   </div>
   <a href="#home">О нас</a>
