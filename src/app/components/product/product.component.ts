@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {ProductService} from "../../services/product.service";
-import {Router} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {NgForOf, NgOptimizedImage} from "@angular/common";
 
 @Component({
@@ -8,7 +8,8 @@ import {NgForOf, NgOptimizedImage} from "@angular/common";
   standalone: true,
   imports: [
     NgForOf,
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterLink
   ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
